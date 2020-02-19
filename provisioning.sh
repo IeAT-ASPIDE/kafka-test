@@ -38,6 +38,6 @@ sh kafka_2.12-2.4.0/bin/kafka-server-start.sh config/server.properties &
 # Add Topic
 sh kafka_2.12-2.4.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic ede_topic &
 
-sh kafka_2.12-2.4.0/kafka-topics.sh --list --bootstrap-server localhost:9092 > topics.out
+sh kafka_2.12-2.4.0/bin/kafka-topics.sh --list --bootstrap-server localhost:9092 > topics.out
 
 
