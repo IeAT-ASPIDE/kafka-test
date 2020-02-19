@@ -1,18 +1,13 @@
 #!/usr/bin/env bash
 # Configure environment
 export SHELL=/bin/bash
-export DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
 apt-get update
 apt-get install -yq --no-install-recommends \
 wget \
 build-essential \
-python-dev \
 ca-certificates \
-bzip2 \
-unzip \
-pandoc \
 openjdk-8-jre-headless
 
 apt-get clean
